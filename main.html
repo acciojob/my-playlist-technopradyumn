@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Playlist</title>
+  <style>
+    body {
+      background-color: rgb(204, 204, 204);
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      list-style-type: none;
+      background-color: white;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    a {
+      text-decoration-line: none;
+    }
+
+
+    .player_one,
+    .player_two {
+      background-color: rgb(255, 255, 255);
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px;
+      border: 2px solid black;
+    }
+
+    .player_one video,
+    .player_one audio {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <h1>My Playlist</h1>
 
+  <div class="player_one">
+    <h2>Now Playing...</h2>
+    <video controls>
+      <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+    </video>
+
+    <h2>MP3 songs</h2>
+    <audio controls>
+      <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="player_two">
+    <ul>
+      <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 1</a></li>
+      <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 2</a></li>
+      <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 3</a></li>
+      <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 4</a></li>
+      <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 5</a></li>
+    </ul>
+  </div>
 </body>
 
 </html>
